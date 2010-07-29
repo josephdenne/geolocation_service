@@ -1,6 +1,6 @@
 <?php
 
-	Class extension_geoloc extends Extension {
+	Class extension_geolocation_service extends Extension {
 
 		public function about() {
 			return array('name' => 'Geo Location Service',
@@ -14,7 +14,7 @@
 		}
 
 		public static function lookup($ip=NULL) {
-			require_once('lib/class.geoloc.php');
+			require_once('lib/class.geolocation_service.php');
 
 			if(is_null($ip)) $ip = $_SERVER['REMOTE_ADDR'];
 

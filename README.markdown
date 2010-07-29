@@ -1,9 +1,9 @@
 # Geo Location Service
 
-* Version: 3.0
+* Version: 3.1
 * Author: Joseph Denne (joseph.denne@airlock.com)
-* Build Date: 08th November 2009
-* Requirements: Symphony 2.0.2 or later
+* Build Date: 29th July 2010
+* Requirements: Symphony 2.0.3 or later
 
 ## Summary
 
@@ -19,7 +19,10 @@ What is the services API? A set of tools designed to extend Symphony's functiona
 
 ## Installation
 
-1. Upload the 'geolocation_service' folder in this archive to your Symphony 'extensions' folder
+** Note: The latest version can alway be grabbed with
+"git clone git@github.com:josephdenne/Geo-Location-Service.git"
+
+1. Rename the extension folder to 'geolocation_service' and upload it to your Symphony 'extensions' folder
 2. Enable it by selecting "Geo Location Service", choose Enable from the with-selected menu, then click Apply
 
 ## Usage
@@ -37,19 +40,18 @@ What is the services API? A set of tools designed to extend Symphony's functiona
 
 1. "ID" is the lookup number for the associated request
 2. "Lookups" referes to the number of looks you have made within the last hour
-3. "Remaining" tells you how many you have left
-4. "Country" is the country that the page-requesting user is in
-5. "Region" is the region that the page-requesting user is in
-6. "City" is the city that the page-requesting user is in
-7. "Latitude" is the current latitiude of the page-requesting user
-8. "Longitude" is the current longitude of the page-requesting user
-9. "Error" provides information in the event of an error or a lookup overrun
+3. "Country" is the country that the page-requesting user is in
+4. "Region" is the region that the page-requesting user is in
+5. "City" is the city that the page-requesting user is in
+6. "Latitude" is the current latitiude of the page-requesting user
+7. "Longitude" is the current longitude of the page-requesting user
+8. "Error" provides information in the event of an error or a lookup overrun
 
 [NOTES]
 
-Free usage of the lookup service is limited to 100 requests/hour per domain or server IP. This cap may or may be unlocked in future and may or may become a standard charged for service.
+The character encoding issue reported by michael-e has finally been resolved.
 
-In the mean time, if you need extended access to the service, please contact us to discuss the removal of the cap.
+There is no longer a cap on the usage of this service. We still track requests and under significant load may need to restrict access. If we do, you will see a request for contact within the error response.
 
 We track the requesting domain, IP and Symphony version number of all requests along with the service response. This is used for further enhancing the service and for giving us a view of the versions of Symphony in the wild.
 
