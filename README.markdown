@@ -49,9 +49,8 @@ An open geo locaiton service providing the following location parameters about y
 
 The character encoding issue reported by michael-e has finally been resolved.
 
-There is no longer a cap on the usage of this service. We still track requests and under significant load may need to restrict access. If we do, you will see a request for contact within the error response.
+There is no longer a cap on the usage of this service. I still track requests and under significant load may need to restrict access. If I do, you will see a request for contact within the error response.
 
-We track the requesting domain, IP and Symphony version number of all requests along with the service response. This is used for further enhancing the service and for giving us a view of the versions of Symphony in the wild.
+I track the requesting domain, IP and Symphony version number of all requests along with the service response. This is used for further enhancing the service.
 
-You can contact me directly at joseph.denne@airlock.com
-
+You can contact me directly at me@josephdenne.com

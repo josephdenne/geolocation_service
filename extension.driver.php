@@ -4,13 +4,12 @@
 
 		public function about() {
 			return array('name' => 'Geo Location Service',
-						 'version' => '3.0',
-						 'release-date' => '2009-08-30',
+						 'version' => '3.2',
+						 'release-date' => '2011-12-17',
 						 'author' => array('name' => 'Joseph Denne',
 										   'website' => 'http://josephdenne.com/',
-										   'email' => 'joseph.denne@airlock.com')
+										   'email' => 'me@josephdenne.com')
 				 		);
-
 		}
 
 		public static function lookup($ip=NULL) {
@@ -19,7 +18,5 @@
 			if(is_null($ip)) $ip = $_SERVER['REMOTE_ADDR'];
 
 			return _geoloc::lookup($ip);
-
 		}
 	}
-

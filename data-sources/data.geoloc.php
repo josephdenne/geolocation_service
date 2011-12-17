@@ -8,14 +8,13 @@
 
 		public function about() {
 			return array('name' => 'Geo Location Service',
-						 'version' => '3.1',
-						 'release-date' => '2010-07-29',
+						 'version' => '3.2',
+						 'release-date' => '2011-12-17',
 						 'author' => array('name' => 'Joseph Denne',
 										   'website' => 'http://josephdenne.com/',
-										   'email' => 'joseph.denne@airlock.com'),
-						 'description' => 'Provides geo location information from the Symphony services API'
+										   'email' => 'me@josephdenne.com'),
+						 'description' => 'An open geo location service providing the location information about your users'
 				 		);
-
 		}
 
 		public function grab(&$param_pool) {
@@ -28,16 +27,11 @@
 
 			if(is_null($location)) {
 				$result->appendChild(new XMLElement('error', 'Unknown location'));
-
 			}
 			else {
 				$result = $location;
-
 			}
 
 			return $result;
-
 		}
-
 	}
-
