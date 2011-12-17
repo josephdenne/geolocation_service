@@ -1,13 +1,13 @@
 # Geo Location Service
 
-* Version: 3.1
+* Version: 3.2
 * Author: Joseph Denne (joseph.denne@airlock.com)
-* Build Date: 29th July 2010
+* Build Date: 17th December 2011
 * Requirements: Symphony 2.0.3 or later
 
 ## Summary
 
-Uses Symphony's services API to provide the following location parameters:
+An open geo locaiton service providing the following location parameters about your users:
 
  - Country
  - Region
@@ -15,12 +15,10 @@ Uses Symphony's services API to provide the following location parameters:
  - Latitude
  - Longitude
 
-What is the services API? A set of tools designed to extend Symphony's functionality via webservices. It's nothing but a proposal and an example service (this one) at this stage, so don't get too excited.
-
 ## Installation
 
 ** Note: The latest version can alway be grabbed with
-"git clone git@github.com:josephdenne/Geo-Location-Service.git"
+"git clone git@github.com:josephdenne/geolocation_service.git"
 
 1. Rename the extension folder to 'geolocation_service' and upload it to your Symphony 'extensions' folder
 2. Enable it by selecting "Geo Location Service", choose Enable from the with-selected menu, then click Apply
