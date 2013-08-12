@@ -1,13 +1,13 @@
-# Geo Location Service
+# Geolocation Service
 
-* Version: 3.2
-* Author: Joseph Denne (joseph.denne@airlock.com)
-* Build Date: 17th December 2011
-* Requirements: Symphony 2.0.3 or later
+* Version: 4.0
+* Author: Joseph Denne (mail@josephdenne.com)
+* Build Date: 12th August 2013
+* Requirements: Symphony 2.2 or later
 
 ## Summary
 
-An open geo locaiton service providing the following location parameters about your users:
+An open geolocaiton service providing the following location parameters about your users -
 
  - Country
  - Region
@@ -47,10 +47,8 @@ An open geo locaiton service providing the following location parameters about y
 
 [NOTES]
 
-The character encoding issue reported by michael-e has finally been resolved.
-
-There is no longer a cap on the usage of this service. I still track requests and under significant load may need to restrict access. If I do, you will see a request for contact within the error response.
+There is no cap on the usage of this service. I track requests and under significant load may need to restrict access. If I do, you will see a request for contact within the error response.
 
 I track the requesting domain, IP and Symphony version number of all requests along with the service response. This is used for further enhancing the service.
 
-You can contact me directly at me@josephdenne.com
+You can contact me directly to discuss high-load usage at any time on mail@josephdenne.com

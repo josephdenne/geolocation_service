@@ -1,29 +1,19 @@
 <?php
 
 	require_once(TOOLKIT . '/class.datasource.php');
+	require_once(EXTENSIONS . '/geolocation_service/lib/class.geolocation_service.php');
 
 	Class datasourceGeoloc extends Datasource {
 
 		public $dsParamROOTELEMENT = 'geolocation_service';
 
-		public function about() {
-			return array('name' => 'Geo Location Service',
-						 'version' => '3.2',
-						 'release-date' => '2011-12-17',
-						 'author' => array('name' => 'Joseph Denne',
-										   'website' => 'http://josephdenne.com/',
-										   'email' => 'me@josephdenne.com'),
-						 'description' => 'An open geo location service providing the location information about your users'
-				 		);
-		}
-
 		public function grab(&$param_pool) {
 
 			$result = new XMLElement($this->dsParamROOTELEMENT);
 
-			$driver = Frontend::instance()->ExtensionManager->create('geolocation_service');
+			$ip = $_SERVER['REMOTE_ADDR'];
 
-			$location = extension_geolocation_service::lookup();
+			$location = _geoloc::lookup($ip);
 
 			if(is_null($location)) {
 				$result->appendChild(new XMLElement('error', 'Unknown location'));

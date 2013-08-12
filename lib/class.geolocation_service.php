@@ -9,7 +9,7 @@
 			// Notice: the request back to the service API includes your domain name
 			// and the version of Symphony that you're using
 
-			$version = Frontend::instance()->Configuration->get('version', 'symphony');
+			$version = Symphony::Configuration()->get('version', 'symphony');
 			$domain = $_SERVER[SERVER_NAME];
 
 			curl_setopt($ch, CURLOPT_URL, "http://api.josephdenne.com/_geoloc/array/?symphony=".$version."&domain=".$domain."&ip=".$ip);
