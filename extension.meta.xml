@@ -17,7 +17,7 @@
 		</author>
 	</authors>
 	<releases>
-		<release version="4.0" date="2013-08-12" min="2.3" max="2.3.2">
+		<release version="4.0" date="2013-08-12" min="2.3" max="2.3">
 			- Symphony 2.3 compatibility
 			- Documentation updates
 		</release>
